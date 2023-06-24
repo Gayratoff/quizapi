@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-wkpy53gy*@7dvjsog_m0f241!pc8qq$c1!b)4m_je_s3_wiu2*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['dev.xudoberdi.uz', 'www.dev.xudoberdi.uz']
 
 
 # Application definition
@@ -143,8 +143,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 MEDIA_URL = 'madia/'
-STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
-MEDIAFILE_DIRS = os.path.join(BASE_DIR,'')
+STATICFILES_ROOT = os.path.join(BASE_DIR,'static'),
+MEDIAFILE_ROOT = os.path.join(BASE_DIR,'')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
